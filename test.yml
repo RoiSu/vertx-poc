@@ -1,0 +1,20 @@
+server:
+  maxThreads: 300
+  minThreads: 24
+  idleThreadTimeout: 1 minutes
+  applicationConnectors:
+  - type: http
+    port: 9005
+  adminConnectors:
+  - type: http
+    port: 9006
+  requestLog:
+    appenders: []
+
+#logging:
+#  level: INFO
+
+
+
+
+endpoint: http://localhost:9005/testDW/parsedJwtDW
